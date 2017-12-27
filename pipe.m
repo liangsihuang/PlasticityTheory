@@ -9,8 +9,9 @@ mu=0.3;%possion's ratio
 E=2*10^5;%elastic modulus
 G=E/2/(1+mu);%shear modulus
 % t=0:1:235;%shear stress
-t=0:234;
+t=0:135;
 fy=235;
 ty=fy/sqrt(3);
+% 结果不对
 gama=t/G+3/E*(-t+ty/2*reallog((ty+t)/(ty-t)));
 plot(gama,t,'ro')
